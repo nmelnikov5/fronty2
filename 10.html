@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Задание 1: Проверка возраста
+        function checkAge() {
+            const name = document.getElementById('name').value;
+            const age = parseInt(document.getElementById('age').value);
+
+            if (age >= 18) {
+                alert(`Привет, ${name}! Вы совершеннолетний.`);
+            } else {
+                alert(`Привет, ${name}! Вы несовершеннолетний.`);
+            }
+        }
+
+        // Задание 2: Циклы
+        function loops() {
+            let output = "Цикл for:\n";
+            for (let i = 1; i <= 10; i++) {
+                output += i + " ";
+            }
+            output += "\n";
+            output += "Цикл while:\n";
+            let j = 10;
+            while (j >= 1) {
+                output += j + " ";
+                j--;
+            }
+
+            alert(output);
+        }
+
+        // Задание 3: Работа с массивами
+        const lectures = ['Тема 1', 'Тема 2', 'Тема 3'];
+        const practices = ['Практика 1', 'Практика 2', 'Практика 3'];
+
+        function addTopics() {
+            const newLecture = document.getElementById('newLecture').value;
+            const newPractice = document.getElementById('newPractice').value;
+
+            if (newLecture) {
+                lectures.push(newLecture);
+            }
+            if (newPractice) {
+                practices.push(newPractice);
+            }
+
+            document.getElementById('newLecture').value = '';
+            document.getElementById('newPractice').value = '';
+            alert("Темы добавлены!");
+        }
+
+        function showLectures() {
+            let output = "Темы лекций:\n";
+            lectures.forEach(topic => output += topic + "\n");
+            alert(output);
+        }
+
+        function showPractices() {
+            let output = "Темы практик:\n";
+            practices.forEach(topic => output += topic + "\n");
+            alert(output);
+        }
+
+        // Задание 4: Фильтрация тем
+        function filterTopics() {
+            const filteredLectures = lectures.filter(topic => topic.startsWith('О'));
+            alert("Темы, начинающиеся с 'О':\n" + filteredLectures.join(', '));
+        }
+
+        
+    </script>
+</head>
+<body>
+    <h2>Задание 1: Проверка возраста</h2>
+    <input type="text" id="name" placeholder="Ваше имя" required>
+    <input type="number" id="age" placeholder="Ваш возраст" required>
+    <button onclick="checkAge()">Проверить возраст</button>
+
+    <h2>Задание 2: Циклы</h2>
+    <button onclick="loops()">Показать числа</button>
+
+    <h2>Задание 3: Работа с массивами</h2>
+    <input type="text" id="newLecture" placeholder="Новая тема лекции">
+    <input type="text" id="newPractice" placeholder="Новая тема практики">
+    <button onclick="addTopics()">Добавить темы</button>
+    <button onclick="showLectures()">Показать темы лекций</button>
+    <button onclick="showPractices()">Показать темы практик</button>
+
+    <h2>Задание 4: Фильтрация тем</h2>
+    <button onclick="filterTopics()">Показать темы, начинающиеся с 'О'</button>
+    <h3>Вывод темы по индексу</h3>
+    <input type="number" id="topicIndex" placeholder="Индекс темы лекции">
+    <button onclick="showTopicByIndex()">Показать тему по индексу</button>
+</body>
+</html>

@@ -1,0 +1,231 @@
+:root{
+    --main-bg-color: #f4f4f4;
+    --modal-bg-color: rgba(0, 0, 0, 0.4);
+    --content-bg-color: #fefefe;
+    --text-color: #333;
+    --border-color: #888;
+    --button-bg-color: #8fabba;
+    --button-hover-bg-color: #7a9bab;
+}
+
+
+body {
+    background-color: var(--main-bg-color);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: var(--text-color);
+}
+
+header {
+    
+    height: 125px;
+    background-color: #fff;
+}
+
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--modal-bg-color);
+}
+
+.modal-content {
+    background-color: var(--content-bg-color);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    width: 30%; /* Увеличиваем ширину модального окна */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.modal-content:hover {
+    transform: scale(1.02);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content {
+    width: 60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.styles {
+    text-align: center;
+}
+
+
+
+.header-nav nav ul {
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.header-nav nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.header-nav nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header-nav nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.asidee ul {
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+}
+
+.asidee ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.asidee ul li a:hover {
+    text-decoration: underline;
+}
+
+.Name-group {
+    padding-bottom: 5px;
+    float: right;
+}
+
+.Name-group p {
+    margin: 0;
+}
+
+.main-header {
+    border-bottom: solid 2px var(--text-color);
+}
+
+.footerr {
+    height: 120px;
+    border-top: solid 2px black;
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    border-top: 2px solid var(--text-color);
+    background-color: #fff;
+    display: flex;
+    padding: 20px;
+}
+
+.asidee {
+    width: 200px;
+    margin-right: 30px;
+    border-right: solid 2px black;
+}
+
+main {
+    height: 100%;
+    margin-top: -25px;
+    flex: 1;
+}
+
+.section {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #7a9bab;
+    padding: 10px;
+    height: 200px;
+    border-radius: 20px;
+    transition: transform 0.2s;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.img-visit {
+    width: 180px;
+    height: 250px;
+}
+
+.section1 {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+.main-word {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444444;
+    background: #FFFFFF;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+
+footer p {
+    color: var(--text-color);
+}
+
+.btn {
+    color: black;
+    background: var(--button-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-bg-color);
+    transform: scale(1.02);
+}
+
+

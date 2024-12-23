@@ -1,0 +1,120 @@
+
+/* Основные стили для всего документа */
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif; /* Шрифт для текста */
+    line-height: 1.6; /* Высота строки */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    background-color: #f4f4f4; /* Цвет фона */
+}
+header{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Стили для заголовков */
+h1, h2 {
+    color: #333; /* Цвет заголовков */
+}
+.header-nav{
+   border-bottom: solid 2px black ; 
+}
+/* Стили для навигации */
+.header-nav nav ul {
+    list-style: none; /* Убираем маркеры списка */
+    margin-left: 10px;
+    padding: 0; /* Убираем внутренние отступы */
+}
+
+.header-nav nav ul li {
+    display: inline; /* Выводим элементы в строку */
+    margin-right: 30px; /* Отступ между элементами */
+}
+
+.header-nav nav ul li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #333; /* Цвет ссылок */
+}
+
+.header-nav nav ul li a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+/* Стили для боковой панели */
+aside {
+    float: left;
+    height: 0px; /* Высота окна минус высота заголовка */
+    position: relative;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    border-right: solid 2px black;
+}
+.asidee ul{
+    list-style: none; /* Убираем маркеры списка */
+    margin-left: 10px;
+    padding: 0; /* Убираем внутренние отступы */
+}
+.asidee ul li a{
+    text-decoration: none;
+    color: #333; /* Убираем подчеркивание */
+}
+.asidee ul li a:hover{
+    text-decoration: underline;
+}
+
+/* Стили для основного содержимого */
+main {
+    background-color: rgb(255, 255, 255);
+    border-left: solid 2px black ;
+    margin-left: 300px;
+    padding: 20px; /* Внутренние отступы */
+}
+.image{
+    height: 400px;
+    width: 300px;
+    float: right;
+    margin-top: -140px;
+    padding-top: 0;
+}
+/* Стили для изображений */
+.example-image {
+    padding-top: 1000px;
+    position:relative;
+    float: right;
+    background: #742f2f;
+}
+.frontend{
+    width: 60%;
+}
+.about_me{
+    width: 70%;
+}
+
+/* Стили для нижнего колонтитула */
+
+.Name-group{
+    padding-bottom: 5px;
+    float: right;
+}
+.Name-group p{
+    margin: 0;
+}
+.main-header{
+    border-bottom: solid 2px #333;
+}
+
+
+footer {
+    border-top: solid 2px black;
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 10px; /* Внутренние отступы */
+    background: rgb(255, 255, 255); /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    position: relative; /* Позиционирование */
+    bottom: 0; /* Прижатие к низу */
+    width: 100%; /* Ширина на всю страницу */
+
+ }
+ footer p{
+    color: #333;
+ }
